@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* header nav a {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+} */
+header nav a:hover {
+  background-color: #e2b52e;
+}
+/* 
+@media screen and (max-width:1000px) {
+  header nav a {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+} */
