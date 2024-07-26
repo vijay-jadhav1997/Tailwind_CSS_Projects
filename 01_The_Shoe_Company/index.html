@@ -21,41 +21,47 @@
 
   
   <main class="max-w-[1440px] mx-auto">
-    <section id="home" class="flex relative bg-[url('./images/background-road.png')] bg-no-repeat bg-cover md:bg-none">
-      <div class="flex items-center w-1/2 bg-transparent">
-        <h1 class="text-white text-2xl leading-7 sm:text-4xl md:text-5xl xl:text-7xl xl:leading-[85px] mx-auto font-bold">THE <br> SHOE <br> COMPANY</h1>
+    <section id="home" class="flex flex-col md:flex-row   md:max-h-[900px] min-h-[800px]">
+      <div class="flex h-[300px] min500:h-[350px] sm:h-[400px] md:h-auto items-center w-full bg-[url('./images/black-background.png')] bg-cover md:bg-none">
+        <h1 class="text-white text-4xl min500:6xl lg:text-7xl xl:text-[5rem] leading-[45px] sm:leading-[60px] md:leading-[70px] xl:leading-[90px]  font-bold pl-5 sm:pl-10 md:pl-0 md:mx-auto lg:pb-36">THE <br> SHOE <br> COMPANY</h1>
       </div>
-      <div class="w-1/2 relative bg-transparent">
-        <img class="lg:w-[90%] h-full" src="./images/background-road.png" alt="background-road-share ">
-        <img class="max-w-[656px] w-[80%] absolute top-[55%] lg:top-[50%] -translate-y-[50%] -left-[20%] lg:-left-[30%]" src="./images/the-white-shoe-hero-image 1.png" alt="the-white-shoe-hero-image 1">
-      </div>
-    </section>
-
-    <section id="how-it-works" class="flex flex-col items-center pt-16 md:pt-24 lg:pt-28 space-y-16">
-      <h2 class="text-4xl font-bold max-w-xl">Have they finnally made the perfect workout shoue?</h2>
-      <div class="relative">
-        <div class="absolute w-60 -top-4 -left-28">
-          <h3 class="text-3xl font-semibold mb-3">THE HEEL</h3>
-          <p>The heel is well-built, has appropriate elevation and is not too rigid.</p>
-        </div>
-        <div class="absolute w-60 top-10 right-0">
-          <h3 class="text-3xl mb-3">THE FRONT</h3>
-          <p>The front is comfortable and adjusts well to the shape of your foot.</p>
-        </div>
-        <div class="absolute w-60 bottom-5 left-10">
-          <h3 class="text-3xl font-semibold mb-3">THE FRONT</h3>
-          <p>The front is comfortable and adjusts well to the shape of your foot.</p>
-        </div>
-        <img class="w-[70%] mx-auto border-2 border-pink-700" src="./images/how-it-works-image 1.png" alt="how-it-works-image">
+      <div class="w-full relative md:h-auto">
+        <img class="w-full max-h-[400px] sm:max-h-[550px] md:max-h-full h-full" src="./images/background-road.png" alt="background-road-share ">
+        <img class="max-w-[656px] w-[80%] min500:w-[70%] sm:w-[65%] md:w-[90%] xl:w-[80%] absolute top-20 md:top-[55%] lg:top-[50%] -translate-y-[50%] left-[15%] sm:left-[20%] md:-left-[20%] lg:-left-[25%] xl:-left-[30%]" src="./images/the-white-shoe-hero-image 1.png" alt="the-white-shoe-hero-image 1">
       </div>
     </section>
 
-    <section id="about" class="bg-slate-400 relative flex flex-col md:flex-row justify-center items-center px-10 pt-28 md:pt-24 pb-4 lg:pt-10">
+    <section id="how-it-works" class="flex flex-col items-center  min-h-[900px] h-full pt-16 md:pt-24 lg:pt-28 space-y-16">
+      <h2 class="text-3xl min500:text-4xl px-4 text-center mb-36 md:mb-16 font-bold max-w-xl">Have they finnally made the perfect workout shoue?</h2>
+      <div class="relative text-sm xl:text-base">
+        <div class="absolute w-44 md:w-[13rem] xl:w-60 -top-40 md:-top-20 lg:-top-10 xl:-top-14 sm:max-md:left-16 left-4 lg:-left-14 xl:-left-28">
+          <h3 class="text-2xl xl:text-3xl font-semibold mb-2">THE HEEL</h3>
+          <p class="">The heel is well-built, has appropriate elevation and is not too rigid.</p>
+          <img class=" translate-x-0 md:translate-x-6 xl:translate-x-16 -translate-y-6 md:-translate-y-10 -rotate-[20deg] md:-rotate-[50deg] w-[88%]" src="./images/arrow-1.png" alt="arrow 1">
+        </div>
+
+        <div class="absolute w-48 md:w-56 -top-64  md:-top-44 lg:-top-36 sm:max-md:right-16 right-4 lg:-right-10">
+          <img class="rotate-12 md:-rotate-[140deg] translate-y-60 md:translate-y-[7.5rem] -translate-x-8 md:-translate-x-28 lg:-translate-x-36 w-[70%]" src="./images/arrow-2.png" alt="arrow-2">
+          <h3 class="text-2xl xl:text-3xl font-semibold mb-2">THE FRONT</h3>
+          <p>The front is comfortable and adjusts well to the shape of your foot.</p>
+        </div>
+        
+        <div class="absolute w-56 xl:w-60 -bottom-60 sm:-bottom-52  md:-bottom-28 xl:-bottom-44 left-[20%]  md:left-10">
+          <h3 class="text-2xl xl:text-3xl font-semibold mb-2">TRACTION</h3>
+          <p>The shoe has good traction and doesn't slip easily.</p>
+          <img class="w-[55%] lg:w-[60%] max-md:rotate-12 translate-x-20 md:translate-x-44  md:max-lg:-translate-y-28 lg:max-xl:-translate-y-32 -translate-y-44" src="./images/arrow-3.png" alt="arrow-3">
+        </div>
+        
+        <img class="w-[55%] rotate-12 md:rotate-0 lg:w-[70%] mx-auto border-2 border-pink-700" src="./images/how-it-works-image 1.png" alt="how-it-works-image">
+      </div>
+    </section>
+
+    <section id="about" class="bg-slate-400 relative flex flex-col md:flex-row justify-center items-center px-6 pt-28 md:pt-24 pb-4 lg:pt-10">
       <div class=" md:max-w-full md:w-1/2">
         <img class="w-full md:max-w-[720px]" src="./images/Group 14.png" alt="Group 14">
       </div>
-      <div class="w-full md:max-w-full md:w-1/2 flex flex-col justify-center px-8 md:px-20 md:pl-10 md:pr-0 lg:pr-2 space-y-5">
-        <h2 class="absolute md:relative top-16 md:top-auto left-[50%] -translate-x-[50%]  text-4xl font-bold">About Us!</h2>
+      <div class="w-full md:max-w-full md:w-1/2 flex flex-col justify-center md:px-20 md:pl-10 lg:pr-2 space-y-5 text-sm sm:text-base">
+        <h2 class="absolute md:relative top-16 md:top-auto left-[50%] -translate-x-[50%] text-3xl  min500:text-4xl font-bold">About Us!</h2>
         <p>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear.</p>
         <p>Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</p>
         <p>At THE SHOE COMPANY,  you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</p>
@@ -63,20 +69,20 @@
       </div>
     </section>
 
-    <section id="testimonials" class="pb-20 flex flex-col justify-center items-center space-y-24 pt-24 px-8">
-      <h2 class="text-3xl text-center leading-10 sm:text-4xl md:text-5xl font-bold max-w-2xl md:leading-[60px]">What People are saying about THE SHOE COMPANY ?</h2>
-      <div class="flex max-w- md:max-w-100% flex-col md:flex-row items-center space-y-10 md:space-y-0">
-        <div class="w-[90%] sm:w-4/5 md:w-1/3 md:px-2 lg:px-4">
+    <section id="testimonials" class="pb-20 flex flex-col justify-center items-center space-y-14 min500:space-y-24 pt-24 px-8">
+      <h2 class="text-[28px] text-center sm:leading-10 sm:text-4xl md:text-5xl font-bold max-w-2xl md:leading-[60px]">What People are saying about THE SHOE COMPANY ?</h2>
+      <div class="flex max-w- md:max-w-100% flex-col md:flex-row items-center space-y-10 min500:space-y-16 md:space-y-0">
+        <div class="w-full min500:max-md:w-[350px] md:px-2 lg:px-4">
           <img class="mx-auto w-[50%] md:w-[70%]" src="./images/Mask group.png" alt="Mask group">
-          <p class="text-center px-6 pt-4">“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design and build quality.”</p>
+          <p class="text-center min500:px-6 pt-4">“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design and build quality.”</p>
         </div>
-        <div class="w-[90%] sm:w-4/5 md:w-1/3 md:px-2 lg:px-4">
+        <div class="w-full min500:max-md:w-[350px] md:px-2 lg:px-4">
           <img class="mx-auto w-[50%] md:w-[80%]" src="./images/Group 4.png" alt="Mask group">
-          <p class="text-center px-6 pt-4">“I love the shoes, the quality, and everyting. They are worth the investment!”</p>
+          <p class="text-center min500:px-6 pt-4">“I love the shoes, the quality, and everyting. They are worth the investment!”</p>
         </div>
-        <div class="w-[90%] sm:w-4/5 md:w-1/3 md:px-2 lg:px-4">
+        <div class="w-full min500:max-md:w-[350px] md:px-2 lg:px-4">
           <img class="mx-auto w-[50%] md:w-[70%]" src="./images/Group 5.png" alt="Mask group">
-          <p class="text-center px-6 pt-4">“They make the best and forever lasting shoes. Superb fit and confort is literally the next level. Much recommended!”</p>
+          <p class="text-center min500:px-6 pt-4">“They make the best and forever lasting shoes. Superb fit and confort is literally the next level. Much recommended!”</p>
         </div>
       </div>
     </section>
