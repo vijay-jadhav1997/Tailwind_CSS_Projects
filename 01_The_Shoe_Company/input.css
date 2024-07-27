@@ -3,13 +3,10 @@
 @tailwind utilities;
 
 
-/* header nav a {
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
-} */
- 
-header nav a:hover {
-  background-color: #e2b52e;
+@media screen and (max-width:768px) {
+  .transition-transform-nav {
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+  }
 }

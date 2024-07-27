@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./dist/output.css">
   <title>The Shoe Company</title>
+  <script src="./script.js" defer></script>
 </head>
-<body class="bg-black text-white">
-  <header class="bg-black/30 backdrop-blur-md max-w-[1440px] w-full flex justify-between items-center px-6 lg:px-14 fixed left-1/2 -translate-x-1/2 top-0 z-10">
+<body class="bg-black text-white overflow-x-hidden">
+  <header class="bg-black/30 backdrop-blur-md max-w-[1440px] w-full flex justify-between items-center px-6 lg:px-14 fixed left-1/2 -translate-x-1/2 top-0 z-10 font-bold">
     <img class="w-16 sm:w-24 lg:w-full max-w-28" src="./images/shoe-company-logo 1.png" alt="shoe company logo">
-    <nav class="hidden absolute md:relative right-4 md:right-0 top-6 md:top-0 p-10 md:p-0 bg-black/30 backdrop-blur-md md:bg-inherit flex-col space-y-4 md:space-y-0 md:block text-white font-bold md:space-x-5 lg:pr-4 lg:space-x-10 lg:text-xl xl:text-2xl xl:space-x-16 xl:pr-8">
-      <a href="#home">Home</a>
-      <a href="#how-it-works">How It Works?</a>
-      <a href="#about">About</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact-us">Contact Us</a>
+    <nav id="nav-bar" class="max-md:translate-x-[110%] max-md:absolute max-md:right-0 max-md:top-0 max-md:pb-24 max-md:pt-20 max-md:bg-slate-400/90 max-md:w-[300px] max-md:flex max-md:flex-col lg:pr-4  text-xl md:max-lg:text-base xl:text-2xl xl:space-x-6 xl:pr-8 transition-transform-nav">
+      <a class="max-md:px-10 md:max-lg:py-1 py-2 hover:bg-amber-500 md:px-4" href="#home">Home</a>
+      <a class="max-md:px-10 md:max-lg:py-1 py-2 hover:bg-amber-500 md:px-4" href="#how-it-works">How It Works?</a>
+      <a class="max-md:px-10 md:max-lg:py-1 py-2 hover:bg-amber-500 md:px-4" href="#about">About</a>
+      <a class="max-md:px-10 md:max-lg:py-1 py-2 hover:bg-amber-500 md:px-4" href="#testimonials">Testimonials</a>
+      <a class="max-md:px-10 md:max-lg:py-1 py-2 hover:bg-amber-500 md:px-4" href="#contact-us">Contact Us</a>
+      <button id="close-btn" class="md:hidden z-11 absolute top-1 sm:top-3 right-5 scale-110 text-3xl hover:scale-95">&Cross;</button>
     </nav>
-    <button class="md:hidden text-2xl">&#9776;</button>
+    <button id="humbergermenu-btn" class="md:hidden z-11 absolute  top-[50%] -translate-y-[50%] right-5 text-2xl sm:text-3xl hover:scale-100">&#9776;</button>
   </header>
 
   
@@ -31,37 +33,37 @@
       </div>
     </section>
 
-    <section id="how-it-works" class="flex flex-col items-center  min-h-[900px] h-full pt-16 md:pt-24 lg:pt-28 space-y-16">
-      <h2 class="text-3xl min500:text-4xl px-4 text-center mb-36 md:mb-16 font-bold max-w-xl">Have they finnally made the perfect workout shoue?</h2>
+    <section id="how-it-works" class="flex flex-col items-center  min-h-[750px] min500:pb-52 h-full  pt-16 sm:pt-24 lg:pt-28 space-y-16">
+      <h2 class="max-[380px]:text-2xl text-3xl min500:text-4xl px-5 text-center max-md:mb-36 md:mb-16 lg:mb-5 font-bold max-w-xl">Have they finnally made the perfect workout shoue?</h2>
       <div class="relative text-sm xl:text-base">
-        <div class="absolute w-44 md:w-[13rem] xl:w-60 -top-40 md:-top-20 lg:-top-10 xl:-top-14 sm:max-md:left-16 left-4 lg:-left-14 xl:-left-28">
-          <h3 class="text-2xl xl:text-3xl font-semibold mb-2">THE HEEL</h3>
+        <div class="absolute w-36 min500:w-44 md:w-[13rem] xl:w-60 -top-[9.5rem] md:-top-20 lg:-top-10 xl:-top-14 sm:max-md:left-16 max-[380px]:left-2 left-[1.5rem] lg:-left-14 xl:-left-28">
+          <h3 class="text-[22px] min500:text-2xl xl:text-3xl font-semibold mb-3">THE HEEL</h3>
           <p class="">The heel is well-built, has appropriate elevation and is not too rigid.</p>
           <img class=" translate-x-0 md:translate-x-6 xl:translate-x-16 -translate-y-6 md:-translate-y-10 -rotate-[20deg] md:-rotate-[50deg] w-[88%]" src="./images/arrow-1.png" alt="arrow 1">
         </div>
 
-        <div class="absolute w-48 md:w-56 -top-64  md:-top-44 lg:-top-36 sm:max-md:right-16 right-4 lg:-right-10">
-          <img class="rotate-12 md:-rotate-[140deg] translate-y-60 md:translate-y-[7.5rem] -translate-x-8 md:-translate-x-28 lg:-translate-x-36 w-[70%]" src="./images/arrow-2.png" alt="arrow-2">
-          <h3 class="text-2xl xl:text-3xl font-semibold mb-2">THE FRONT</h3>
+        <div class="absolute w-36 max-[425px]:w-40 min500:w-48 md:w-56 -top-64  md:-top-44 lg:-top-36 max-[425px]:right-0 sm:max-md:right-16 right-[5%] lg:-right-10">
+          <img class="rotate-12 md:-rotate-[140deg] translate-y-[13.5rem] min500:translate-y-56 md:translate-y-[7.5rem] max-[380px]:translate-x-0 -translate-x-8 md:-translate-x-28 lg:-translate-x-36 w-[70%]" src="./images/arrow-2.png" alt="arrow-2">
+          <h3 class="text-[22px] min500:text-2xl xl:text-3xl font-semibold mb-3">THE FRONT</h3>
           <p>The front is comfortable and adjusts well to the shape of your foot.</p>
         </div>
         
-        <div class="absolute w-56 xl:w-60 -bottom-60 sm:-bottom-52  md:-bottom-28 xl:-bottom-44 left-[20%]  md:left-10">
-          <h3 class="text-2xl xl:text-3xl font-semibold mb-2">TRACTION</h3>
+        <div class="absolute w-44 min500:w-56 xl:w-60 -bottom-52 min500:max-sm:-bottom-60 md:-bottom-48  lg:max-xl:-bottom-36 max-[425px]:left-[10%] left-[20%]  md:left-48">
+          <h3 class="text-[22px] min500:text-2xl xl:text-3xl font-semibold mb-3">TRACTION</h3>
           <p>The shoe has good traction and doesn't slip easily.</p>
-          <img class="w-[55%] lg:w-[60%] max-md:rotate-12 translate-x-20 md:translate-x-44  md:max-lg:-translate-y-28 lg:max-xl:-translate-y-32 -translate-y-44" src="./images/arrow-3.png" alt="arrow-3">
+          <img class="w-[55%] lg:w-[60%] max-md:rotate-12 translate-x-20 md:translate-x-28 lg:translate-x-36 -translate-y-36  md:max-lg:-translate-y-[10.5rem] lg:max-xl:-translate-y-32 min500:-translate-y-44" src="./images/arrow-3.png" alt="arrow-3">
         </div>
         
-        <img class="w-[55%] rotate-12 md:rotate-0 lg:w-[70%] mx-auto border-2 border-pink-700" src="./images/how-it-works-image 1.png" alt="how-it-works-image">
+        <img class="w-[55%] rotate-12 md:rotate-0 lg:w-[70%] mx-auto" src="./images/how-it-works-image 1.png" alt="how-it-works-image">
       </div>
     </section>
 
-    <section id="about" class="bg-slate-400 relative flex flex-col md:flex-row justify-center items-center px-6 pt-28 md:pt-24 pb-4 lg:pt-10">
+    <section id="about" class="relative flex flex-col md:flex-row justify-center items-center px-6 lg:px-10 xl:px-20 py-28 min500:max-md:pt-40">
       <div class=" md:max-w-full md:w-1/2">
         <img class="w-full md:max-w-[720px]" src="./images/Group 14.png" alt="Group 14">
       </div>
-      <div class="w-full md:max-w-full md:w-1/2 flex flex-col justify-center md:px-20 md:pl-10 lg:pr-2 space-y-5 text-sm sm:text-base">
-        <h2 class="absolute md:relative top-16 md:top-auto left-[50%] -translate-x-[50%] text-3xl  min500:text-4xl font-bold">About Us!</h2>
+      <div class="w-full md:max-w-full md:w-1/2 flex flex-col justify-center md:pl-10 md:pr-10 xl:pr-40 space-y-5 text-sm sm:text-base">
+        <h2 class="absolute md:relative max-min500:top-16 min500:top-24 md:top-auto left-[50%] -translate-x-[50%] text-3xl  min500:text-4xl font-bold">About Us!</h2>
         <p>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear.</p>
         <p>Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</p>
         <p>At THE SHOE COMPANY,  you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</p>
@@ -69,7 +71,7 @@
       </div>
     </section>
 
-    <section id="testimonials" class="pb-20 flex flex-col justify-center items-center space-y-14 min500:space-y-24 pt-24 px-8">
+    <section id="testimonials" class="bg-[url('./images/background-crowd.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center space-y-14 min500:space-y-24 pt-28 px-8 pb-16 md:pb-32">
       <h2 class="text-[28px] text-center sm:leading-10 sm:text-4xl md:text-5xl font-bold max-w-2xl md:leading-[60px]">What People are saying about THE SHOE COMPANY ?</h2>
       <div class="flex max-w- md:max-w-100% flex-col md:flex-row items-center space-y-10 min500:space-y-16 md:space-y-0">
         <div class="w-full min500:max-md:w-[350px] md:px-2 lg:px-4">
@@ -87,7 +89,7 @@
       </div>
     </section>
 
-    <section id="contact-us" class="flex flex-col md:flex-row md:items-center py-20 md:px-8 ">
+    <section id="contact-us" class="flex flex-col md:flex-row md:items-center md:px-8 py-20 sm:py-24 md:max-lg:py-40">
       <div class="pl-20 mb-8 md:w-1/2">
         <h2 class="text-3xl md:text-5xl font-bold mb-4">Contact Us</h2>
         <address>
@@ -116,5 +118,6 @@
     </section>
     
   </main>
+
 </body>
 </html>
