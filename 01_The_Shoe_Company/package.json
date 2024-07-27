@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build-css": "tailwindcss -i ./input.css -o ./dist/output.css --minify",
+    "build-css": "tailwindcss -i ./input.css -o ./output.css --minify",
     "build": "npm run build-css",
-     "dev": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+     "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["tailwindcss Project"],
