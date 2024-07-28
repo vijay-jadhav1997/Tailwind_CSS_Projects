@@ -9,7 +9,7 @@
 
 #### **🌐 Useful Links :**
 - **Check out the project live** => [https://Shoe_Company_Landing_Page](https://tailwind-css-projects.vercel.app/).
-- **The Figma design of the shoe company landing page** => [https://Shoe_Company_Landing_Page_Figma][(https://tailwind-css-projects.vercel.app/](https://www.figma.com/design/KRagV1oBRnzQAOIOwalUgz/The-Shoe-Company?node-id=0-1&t=SSqRP26bo3m0pkOw-0)).
+- **The Figma design of the shoe company landing page** => [https://Shoe_Company_Landing_Page_Figma](https://www.figma.com/design/KRagV1oBRnzQAOIOwalUgz/The-Shoe-Company?node-id=0-1&t=SSqRP26bo3m0pkOw-0).
 
 #### **📂 Project Structure**
 01_The_Shoe_Company/  
