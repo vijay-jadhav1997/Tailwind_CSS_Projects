@@ -5,14 +5,18 @@
   "scripts": {
     "build-css": "tailwindcss -i ./input.css -o ./output.css --minify",
     "build": "npm run build-css",
-     "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["tailwindcss Project"],
+  "keywords": [
+    "tailwindcss Project"
+  ],
   "author": "Vijay Jadhav",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.7"
   }
 }
